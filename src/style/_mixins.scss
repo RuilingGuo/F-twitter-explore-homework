@@ -3,7 +3,7 @@
   font-size: $font-size;
 }
 
-@mixin btn-variant($color,$bg-color, $padding-y:8px,$padding-x:40px) {
+@mixin btn-variant($color,$bg-color,$padding-x:40px, $padding-y:8px) {
   color: $color;
   background-color: $bg-color;
   border-radius: 20px;

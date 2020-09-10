@@ -11,11 +11,12 @@
   text-align: center;
 }
 
-.header-nav, .user-access-ul {
-  @extend .flex-row-center
+.header-nav, .header-access-ul {
+  @extend .flex-center;
+  flex-direction: row;
 }
 
-.user-access-ul {
+.header-access-ul {
   li {
     margin: auto 2px;
   }
