@@ -12,16 +12,21 @@
 }
 
 .header-nav, .user-access-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
+  @extend .flex-row-center
 }
 
 .user-access-ul {
-  > li {
-    margin: auto 10px;
+  li {
+    margin: auto 2px;
   }
+}
+
+.access-btn__register {
+  @include btn-variant($white, $primary-color);
+}
+
+.access-btn__login {
+  @include btn-variant($primary-color,$body-bg);
 }
 
 
