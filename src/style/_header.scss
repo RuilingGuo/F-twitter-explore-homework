@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  padding: $container-padding-y $container-padding-x;
+  border: 1px $border-color solid;
+}
+
+.header-title {
+  text-align: center;
+}
+
+.header-nav, .user-access-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.user-access-ul {
+  > li {
+    margin: auto 10px;
+  }
+}
+
+
+
