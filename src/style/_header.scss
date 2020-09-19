@@ -11,7 +11,9 @@
   text-align: center;
 }
 
-.header-nav, .header-access-ul {
+.header-nav,
+.header-access-ul {
+  //TODO feedback: 应该使用@include而不是@extend, 要去了解一下二者的区别
   @extend .flex-center;
   flex-direction: row;
 }
@@ -21,14 +23,11 @@
     margin: auto 2px;
   }
 }
-
+//TODO feedback @include的使用正确！
 .access-btn__register {
   @include btn-variant($white, $primary-color);
 }
 
 .access-btn__login {
-  @include btn-variant($primary-color,$body-bg);
+  @include btn-variant($primary-color, $body-bg);
 }
-
-
-

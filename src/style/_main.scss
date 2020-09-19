@@ -1,18 +1,22 @@
-
 .form-access-ul {
+  //TODO feedback: 应该使用@include而不是@extend, 要去了解一下二者的区别
   @extend .flex-center;
   flex-direction: column;
 }
 
-.form-access-ul, .login-form, .login-form-title {
+.form-access-ul,
+.login-form,
+.login-form-title {
   padding: $container-padding-y $container-padding-x;
 }
 
 .form-option {
+  //TODO feedback: 应该使用@include而不是@extend, 要去了解一下二者的区别
   @extend .flex-center;
 }
 
 .main {
+  //TODO feedback: 应该使用@include而不是@extend, 要去了解一下二者的区别
   @extend .flex-center;
   align-items: center;
   flex: 1;
@@ -23,6 +27,7 @@
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  //TODO feedback: 这里应该使用vw, 去了解一下vw和vh的差别
   width: 50vh;
   border: 1px $border-color solid;
   border-radius: $border-radius-base;
@@ -42,14 +47,15 @@
   width: 100%;
 }
 
-.login-form-input{
+.login-form-input {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   flex-grow: 1;
 }
 
-.login-form-input, .login-form-hint{
+.login-form-input,
+.login-form-hint {
   padding: $less-container-padding-y $container-padding-x;
 }
 
@@ -59,9 +65,8 @@
   font-family: $font-family-base;
   font-size: $font-size-base;
   line-height: $line-height-base;
-  border-bottom:1px $border-color solid;
+  border-bottom: 1px $border-color solid;
 }
-
 
 .form-access-btn__register {
   @include btn-variant($white, $primary-color);
@@ -69,11 +74,6 @@
 }
 
 .form-access-btn__login {
-  @include btn-variant($primary-color,$body-bg);
+  @include btn-variant($primary-color, $body-bg);
   width: 100%;
 }
-
-
-
-
-
